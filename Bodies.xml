@@ -3,7 +3,7 @@
   <anatomies>
     <bodyparttypevariants>
       <bodyparttypevariant VariantOf="Face" Type="Eyes" Category="Protoplasmic" UsuallyOn="Face" Branching="Lateral,Stratal"/>
-      <bodyparttypevariant VariantOf="Face" Type="Nose" Category="Bone" UsuallyOn="Face" Branching="Lateral,Stratal"/>
+      <bodyparttypevariant VariantOf="Face" Type="Snout" Category="Bone" UsuallyOn="Face" Branching="Lateral,Stratal"/>
     </bodyparttypevariants>
 
 
@@ -11,7 +11,7 @@
       <part Type="Head">
         <part Type="Face">
           <part Type="Eyes" />
-          <part Type="Nose" />
+          <part Type="Snout" />
           <part Type="Mouth" />
         </part>
       </part>
