@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <bodies>
+  <bodyparttypevariants>
+    <bodyparttypevariant VariantOf="Face" Type="Eyes" Category="Protoplasmic" UsuallyOn="Face" Branching="Lateral,Stratal"/>
+    <bodyparttypevariant VariantOf="Face" Type="Snout" Category="Bone" UsuallyOn="Face" Branching="Lateral,Stratal"/>
+  </bodyparttypevariants>
+
   <anatomies>
-    <bodyparttypevariants>
-      <bodyparttypevariant VariantOf="Face" Type="Eyes" Category="Protoplasmic" UsuallyOn="Face" Branching="Lateral,Stratal"/>
-      <bodyparttypevariant VariantOf="Face" Type="Snout" Category="Bone" UsuallyOn="Face" Branching="Lateral,Stratal"/>
-    </bodyparttypevariants>
-
-
     <anatomy Name="KoboldTailedBiped">
       <part Type="Head">
         <part Type="Face">

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+    <object Name="KoboldTailedBiped" Inherits="BaseHumanoid">
+        <part Name="Render" RenderString="h"/>
+        <part Name="Corpse" CorpseChance="90" CorpseBlueprint="Human Corpse"/>
+        <stat Name="Strength" sValue="14,2d3,(t)d2"/>
+        <stat Name="Agility" sValue="14,2d3,(t)d2"/>
+        <stat Name="Toughness" sValue="14,2d3,(t)d2"/>
+        <stat Name="Intelligence" sValue="14,2d3,(t)d2"/>
+        <stat Name="Willpower" sValue="14,2d3,(t)d2"/>
+        <stat Name="Ego" sValue="14,2d3,(t)d2"/>
+        <intproperty Name="Bleeds" Value="1"/>
+        <intproperty Name="Humanoid" Value="1"/>
+        <tag Name="BaseObject" Value="*noinherit"/>
+        <part Name="ConversationScript" ConversationID="Humanoids" ClearLost="true"/>
+        <tag Name="Humanoid"/>
+        <tag Name="Kobold"/>
+        <xtagTextFragments Skin="skin" PoeticFeatures="small stature,adorable scales,small teeth,sharp teeth,long tailed,scaled skin,outstretched legs,eyes full of wonder,glistening scales"
+                           Activity="going about the tedious work of speaking to peers,setting traps,preparing mischief,hunting and gathering,wandering the salt dunes"
+                           VillageActivity="sleeping in our bedrolls and sitting in our chairs,setting traps,lounging around,reading books,peeling and eating musa"
+                           NeedsItemFor="for my own collection,to give to the dragon,for worship,for the tribe,to slake my greed,because of its trade value,to inspire my art,to inspire my poetry,to be my muse,to help with farm work,for the games we play under the Beetle Moon"
+                           SacredThing="the act of procreating,philosophy,alcohol,dragons,traps,grains of the earth,stone fruit,artistry,poetry,warm meals,bread and wine,pottery,painting,magic"
+                           ArableLand="arable land,livestock,the bounty of the earth"
+                           ValuedOre="precious metals,artifacts,chrome,jasper,cybernetics,the nectar of the Eaters"/>
+        <tag Name="SimpleConversation"
+             Value="Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=."/>
+        <tag Name="PrimaryLimbType" Value="Hand"/>
+        <tag Name="BodyDisplayName" Value="Kobold" />
+        <part Name="Body" Anatomy="KoboldTailedBiped" />
+    </object>
+
+</objects>
