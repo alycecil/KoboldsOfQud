@@ -1,56 +1,122 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <subtypes>
-  <class ID="KoboldColorWarscale" ChargenTitle="Select Scale Color" SingularTitle="scale color">
-    <subtype Name="WarscaleBlue" DisplayName="Blue Scaled Warscale" Code="kb" Gear="StartingGear_Marauder" Tile="Creatures/Kobold_Warscale.png" DetailColor="B">
-      <stat Name="ColdResistance" Value="20" Minimum="20" />
-    </subtype>
 
-    <subtype Name="WarscaleRed" DisplayName="Red Scaled Warscale" Code="kr" Gear="StartingGear_Marauder" Tile="Creatures/Kobold_Warscale.png" DetailColor="R">
-      <stat Name="HeatResistance" Value="20" Minimum="20" />
-    </subtype>
+    <class ID="Koboldings" ChargenTitle="choose kobold calling" SingularTitle="Kobolding">
 
-    <subtype Name="WarscaleYellow" DisplayName="Yellow Scaled Warscale" Code="ky" Gear="StartingGear_Marauder" Tile="Creatures/Kobold_Warscale.png" DetailColor="W">
-      <stat Name="ElectricResistance" Value="20" Minimum="20" />
-    </subtype>
+        <subtype Name="Kobold Scavenger" Gear="StartingGear_Apostle" Tile="Creatures/Kobold_Dress.png" DetailColor="w">
+            <stat Name="Agility" Bonus="2"/>
+            <stat Name="Willpower" Bonus="3"/>
+            <stat Name="Strength" Bonus="2"/>
+            <skills>
+                <skill Name="ShortBlades"/>
+                <skill Name="Tinkering"/>
+                <skill Name="Tinkering_Scavenger"/>
+                <skill Name="Acrobatics"/>
+                <skill Name="Acrobatics_Dodge"/>
+                <skill Name="Pistol"/>
+                <skill Name="Pistol_Akimbo"/>
+                <skill Name="Customs"/>
+            </skills>
+            <reputations>
+                <reputation With="Strangers" Value="700"/>
+                <reputation With="Bears" Value="700"/>
+            </reputations>
+            <extrainfo>Starts with random junk and artifacts</extrainfo>
+        </subtype>
 
-    <subtype Name="WarscaleGreen" DisplayName="Green Scaled Warscale" Code="kg" Gear="StartingGear_Marauder" Tile="Creatures/Kobold_Warscale.png" DetailColor="G">
-      <stat Name="AcidResistance" Value="20" Minimum="20" />
-    </subtype>
-  </class>
+        <subtype Name="Kobold Warscale" Gear="StartingGear_Greybeard" Tile="Creatures/Kobold_Warscale.png"
+                 DetailColor="w">
+            <stat Name="Agility" Bonus="2"/>
+            <stat Name="Willpower" Bonus="3"/>
+            <stat Name="Strength" Bonus="2"/>
+            <skills>
+                <skill Name="Cudgel"/>
+                <skill Name="Persuasion_Berate"/>
+                <skill Name="Endurance_Calloused"/>
+                <skill Name="Pistol"/>
+                <skill Name="Pistol_Akimbo"/>
+                <skill Name="Axe"/>
+                <skill Name="Axe_Dismember"/>
+                <skill Name="Tactics_Charge"/>
+                <skill Name="CookingAndGathering_Butchery"/>
+                <skill Name="Pistol" />
+                <skill Name="Pistol_Akimbo" />
+            </skills>
+            <reputations>
+                <reputation With="Strangers" Value="700"/>
+                <reputation With="Bears" Value="700"/>
+            </reputations>
+        </subtype>
 
-  <class ID="KoboldColorTinkerclaw" ChargenTitle="Select Scale Color" SingularTitle="scale color">
-    <subtype Name="TinkerclawBlue" DisplayName="Blue Scaled Tinkerclaw" Code="kb" Gear="StartingGear_Tinker" Tile="Creatures/Kobold_Tinkerclaw.png" DetailColor="B">
-      <stat Name="ColdResistance" Value="20" Minimum="20" />
-    </subtype>
+        <subtype Name="Kobold Nomad" Gear="StartingGear_Nomad" Tile="Creatures/Kobold_Pants.png" DetailColor="W">
+            <stat Name="Toughness" Bonus="2"/>
+            <stat Name="Willpower" Bonus="3"/>
+            <skills>
+                <skill Name="Discipline"/>
+                <skill Name="Discipline_FastingWay"/>
+                <skill Name="Discipline_IronMind"/>
+                <skill Name="Survival"/>
+                <skill Name="Survival_SaltDesertSurvival"/>
+                <skill Name="CookingAndGathering_Harvestry"/>
+                <skill Name="Survival_Trailblazer"/>
+                <skill Name="Endurance_Weathered"/>
+                <skill Name="Pistol" />
+                <skill Name="Pistol_Akimbo" />
+            </skills>
+            <reputations>
+                <reputation With="Issachari" Value="700"/>
+            </reputations>
+            <extrainfo>Starts with a &amp;Brecycling suit</extrainfo>
+        </subtype>
 
-    <subtype Name="TinkerclawRed" DisplayName="Red Scaled Tinkerclaw" Code="kr" Gear="StartingGear_Tinker" Tile="Creatures/Kobold_Tinkerclaw.png" DetailColor="R">
-      <stat Name="HeatResistance" Value="20" Minimum="20" />
-    </subtype>
 
-    <subtype Name="TinkerclawYellow" DisplayName="Yellow Scaled Tinkerclaw" Code="ky" Gear="StartingGear_Tinker" Tile="Creatures/Kobold_Tinkerclaw.png" DetailColor="W">
-      <stat Name="ElectricResistance" Value="20" Minimum="20" />
-    </subtype>
+        <subtype Name="Kobold Tinker" Gear="StartingGear_Tinker" Tile="Creatures/Kobold_Tinkerclaw.png" DetailColor="w">
+            <stat Name="Intelligence" Bonus="2"/>
+            <stat Name="Willpower" Bonus="3"/>
+            <skills>
+                <skill Name="Tinkering"/>
+                <skill Name="Firstaid"/>
+                <skill Name="Firstaid_Heal"/>
+                <skill Name="CookingAndGathering_Harvestry"/>
+                <skill Name="Tinkering_LayMine"/>
+                <skill Name="Tinkering_Disassemble"/>
+                <skill Name="Tinkering_Repair"/>
+                <skill Name="Tinkering_Tinker1"/>
+                <skill Name="Tactics"/>
+                <skill Name="Pistol"/>
+                <skill Name="Pistol_Akimbo"/>
+                <skill Name="Customs"/>
+            </skills>
+            <reputations>
+                <reputation With="Barathrumites" Value="900"/>
+            </reputations>
+            <extrainfo>Begins with a number of random artifacts and scrap</extrainfo>
+            <extrainfo>As a disciple of Q Girl the Barathrumites love you.</extrainfo>
+        </subtype>
 
-    <subtype Name="TinkerclawGreen" DisplayName="Green Scaled Tinkerclaw" Code="kg" Gear="StartingGear_Tinker" Tile="Creatures/Kobold_Tinkerclaw.png" DetailColor="G">
-      <stat Name="AcidResistance" Value="20" Minimum="20" />
-    </subtype>
-  </class>
+        <subtype Name="Kobold Farmer" Gear="StartingGear_WatervineFarmer" Tile="Creatures/Kobold_Watertail.png"
+                 DetailColor="w">
+            <stat Name="Toughness" Bonus="3"/>
+            <stat Name="Strength" Bonus="3"/>
+            <skills>
+                <skill Name="Tinkering"/>
+                <skill Name="Tinkering_Tinker1"/>
+                <skill Name="Firstaid"/>
+                <skill Name="Firstaid_Heal"/>
+                <skill Name="CookingAndGathering"/>
+                <skill Name="CookingAndGathering_Harvestry"/>
+                <skill Name="Axe"/>
+                <skill Name="Survival_SaltmarshSurvival"/>
+                <skill Name="Pistol"/>
+                <skill Name="Pistol_Akimbo"/>
+            </skills>
+            <reputations>
+                <reputation With="Joppa" Value="900"/>
+            </reputations>
+            <extrainfo>Starts with random cooking ingredients</extrainfo>
+            <extrainfo>As a fellow Watervine farmer, Joppa likes you.</extrainfo>
+        </subtype>
 
-  <class ID="KoboldColorWatertail" ChargenTitle="Select Scale Color" SingularTitle="scale color">
-    <subtype Name="WatertailBlue" DisplayName="Blue Scaled Frosttail" Code="kb" Gear="StartingGear_WatertailKobold" Tile="Creatures/Kobold_Watertail.png" DetailColor="B">
-      <stat Name="ColdResistance" Value="20" Minimum="20" />
-    </subtype>
+    </class>
 
-    <subtype Name="WatertailRed" DisplayName="Red Scaled Watertail" Code="kr" Gear="StartingGear_WatertailKobold" Tile="Creatures/Kobold_Watertail.png" DetailColor="R">
-      <stat Name="HeatResistance" Value="20" Minimum="20" />
-    </subtype>
-
-    <subtype Name="WatertailYellow" DisplayName="Yellow Scaled Watertail" Code="ky" Gear="StartingGear_WatertailKobold" Tile="Creatures/Kobold_Watertail.png" DetailColor="W">
-      <stat Name="ElectricResistance" Value="20" Minimum="20" />
-    </subtype>
-
-    <subtype Name="WatertailGreen" DisplayName="Green Scaled Watertail" Code="kg" Gear="StartingGear_WatertailKobold" Tile="Creatures/Kobold_Watertail.png" DetailColor="G">
-      <stat Name="AcidResistance" Value="20" Minimum="20" />
-    </subtype>
-  </class>
 </subtypes>
