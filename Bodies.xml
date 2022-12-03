@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<bodies>
+  <anatomies>
+    <bodyparttypevariants>
+      <bodyparttypevariant VariantOf="Face" Type="Eyes" Category="Protoplasmic" UsuallyOn="Face" Branching="Lateral,Stratal"/>
+      <bodyparttypevariant VariantOf="Face" Type="Nose" Category="Bone" UsuallyOn="Face" Branching="Lateral,Stratal"/>
+    </bodyparttypevariants>
+
+
+    <anatomy Name="KoboldTailedBiped">
+      <part Type="Head">
+        <part Type="Face">
+          <part Type="Eyes" />
+          <part Type="Nose" />
+          <part Type="Mouth" />
+        </part>
+      </part>
+      <part Type="Back" />
+      <part Type="Arm" Laterality="Right">
+        <part Type="Hand" Laterality="Right" SupportsDependent="Hands" />
+      </part>
+      <part Type="Arm" Laterality="Left">
+        <part Type="Hand" Laterality="Left" SupportsDependent="Hands" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Hands" DependsOn="Hands" />
+      <part Type="Feet" />
+      <part Type="Tail" />
+      <part Type="Floating Nearby" />
+      <part Type="Floating Nearby" />
+      <part Type="Floating Nearby" />
+    </anatomy>
+
+  </anatomies>
+
+</bodies>
